@@ -9,17 +9,33 @@
   </head>
   <body>
     <div class="navbar flex p-2 justify-between items-center">
-      <div class="flex justify-center items-center space-x-1">
-        <div class="hamburger ">
+      <div class="flex justify-center items-center space-x-1 md:order-2">
+        <div class="hamburger md:hidden">
           <div class="lines h-0.5 w-6 bg-black my-1"></div>
           <div class="lines h-0.5 w-6 bg-black my-1"></div>
           <div class="lines h-0.5 w-6 bg-black my-1"></div>
         </div>
-        <div class="search">search</div>
+        <div class="search md:hidden">search</div>
       </div>
-      <div class="logo">microsoft</div>
+      <div class="logo md:order-1 flex space-x-1">
+          <div>microsoft</div> 
+          <div class="features flex absolute md:static md:space-x-2 -translate-x-96 md:translate-x-0 md:w-auto md:bg-white inset-0 w-fit bg-gray-300">
+            <div class="items"> Microsoft-365</div>
+            <div class="items"> Office </div>
+            <div class="items"> Windows</div> 
+            <div class="items"> Surface</div> 
+            <div class="items"> Xbox </div>
+            <div class="items"> Support</div> 
+          </div>
+      </div>
 
-      <div class="cart"> cart account</div>
+      <div class="cart md:order-3 flex space-x-1">
+        <div class="search hidden md:block">search</div>
+        <div>cart account</div>
+           
+        </div>
     </div>
   </body>
 </html>
+
+
